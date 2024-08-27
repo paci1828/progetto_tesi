@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Kc-sea</title>
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="keycloak.json"></script>
+    <script>
+      function initKeycloak() {
+        const keycloak = new Keycloak();
+        keycloak
+          .init()
+          .then(function (authenticated) {
+            alert(authenticated ? "authenticated" : "not authenticated");
+          })
+          .catch(function () {
+            alert("failed to initialize");
+          });
+      }
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- url completa della pagina con protocollo https -->
+    <link href="https://www.milanolinate-airport.com/it/" rel="canonical" />
+    <meta
+      name="twitter:url"
+      content="https://www.milanolinate-airport.com/it/"
+    />
+
+    <title>
+      Sito ufficiale dell'aeroporto di Linate. Voli, parcheggi e servizi di
+      Milano Linate
+    </title>
+
+    <meta
+      name="description"
+      content="Sito ufficiale dell'aeroporto di Milano Linate. Consulta l'orario dei voli, i prezzi e le offerte dei parcheggi e tutti i servizi dello scalo di Milano più vicino alla città."
+    />
+
+    <link
+      rel="alternate"
+      href="https://www.milanolinate-airport.com/it/"
+      hreflang="it"
+    />
+    <link
+      rel="alternate"
+      href="https://www.milanolinate-airport.com/en/"
+      hreflang="en"
+    />
+    <meta
+      name="keywords"
+      content="linate, milano linate, aeroporto milano linate"
+    />
+    <meta name="author" content="" />
+    <meta name="owner" content="" />
+    <meta name="language" content="it" />
+    <!--favicon madness-->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/res/img/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/res/img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/res/img/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/res/img/favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/res/img/favicon/safari-pinned-tab.svg"
+      color="#e2001a"
+    />
+    <link rel="shortcut icon" href="/res/img/favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#fe001d" />
+    <meta
+      name="msapplication-config"
+      content="/res/img/favicon/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#f3001c" />
+    <!-- facebook -->
+    <meta
+      property="og:title"
+      content="Sito ufficiale dell'aeroporto di Linate. Voli, parcheggi e servizi di Milano Linate"
+    />
+    <meta
+      property="og:description"
+      content="Sito ufficiale dell'aeroporto di Milano Linate. Consulta l'orario dei voli, i prezzi e le offerte dei parcheggi e tutti i servizi dello scalo di Milano più vicino alla città."
+    />
+    <meta
+      property="og:url"
+      content="https://www.milanolinate-airport.com/it/"
+    />
+    <!-- se c'è immagine impostata da cms url completa dell'immagine SEO -->
+    <meta
+      property="og:image"
+      content="https://www.milanolinate-airport.com/assets/4/AbstractPage/276/C_4_AbstractPage_38_pageImage.png"
+    />
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@MiAirports" />
+    <meta
+      name="twitter:title"
+      content="Sito ufficiale dell'aeroporto di Linate. Voli, parcheggi e servizi di Milano Linate"
+    />
+    <meta
+      name="twitter:description"
+      content="Sito ufficiale dell'aeroporto di Milano Linate. Consulta l'orario dei voli, i prezzi e le offerte dei parcheggi e tutti i servizi dello scalo di Milano più vicino alla città."
+    />
+    <!-- se c'è immagine impostata da cms url completa dell'immagine SEO -->
+    <meta
+      property="twitter:image"
+      content="https://www.milanolinate-airport.com/assets/4/AbstractPage/276/C_4_AbstractPage_38_pageImage.png"
+    />
+
+    <meta name="referrer" content="origin" />
+    <meta
+      name="google-site-verification"
+      content="O9KGBBGOrdaWpgZGBNlsq0Y1qBChD-aV62vMbPF8X1M"
+    />
+    <script>
+      var section = "LINMXP_HOMEPAGE";
+      var site = "linate";
+      var sitename = "linate";
+      var ssiDate = "2022/11/22 15:09";
+      var site_ambient = "www.";
+      var airportCode = "LIN";
+    </script>
+    <!-- Global site tag (gtm.js) - Google Tag Manager -->
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtm.js?id=GTM-5C2QWLM"
+    ></script>
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5C2QWLM");
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- sito: milanolinate-airport.com -->
+
+    <!-- Pagina: homepage -->
+
+    <!-- TAG DA POSIZIONARE NELLA SEZIONE HEAD DEL CODICE DELLA PAGINA -->
+    <script
+      type="application/javascript"
+      src="https://ced.sascdn.com/tag/2661/smart.js"
+      async
+    ></script>
+    <script type="application/javascript">
+      var _pageId;
+      var _siteId;
+      var _target;
+
+      if (site == "linate") {
+        _siteId = 299226;
+
+        if (section == "LINMXP_HOMEPAGE") _pageId = 1095950;
+        else if (
+          section == "LINMXP_FLIGHTS_DEPARTURE_ARRIVALS" ||
+          section == "LINMXP_FLIGHTS_SEASONAL" ||
+          section == "LINMXP_FLIGHTS_DESTINATIONS" ||
+          section == "LINMXP_FLIGHTS_DETAIL" ||
+          section == "LINMXP_FLIGHTS"
+        )
+          _pageId = 1095951;
+        else _pageId = 1095949;
+      } else {
+        _siteId = 299227;
+
+        if (section == "LINMXP_HOMEPAGE") _pageId = 1095953;
+        else if (
+          section == "LINMXP_FLIGHTS_DEPARTURE_ARRIVALS" ||
+          section == "LINMXP_FLIGHTS_SEASONAL" ||
+          section == "LINMXP_FLIGHTS_DESTINATIONS" ||
+          section == "LINMXP_FLIGHTS_DETAIL" ||
+          section == "LINMXP_FLIGHTS"
+        )
+          _pageId = 1095954;
+        else _pageId = 1095952;
+      }
+
+      _target =
+        "lang=" + document.querySelector('meta[name="language"]').content;
+
+      var sas = sas || {};
+      sas.cmd = sas.cmd || [];
+      sas.cmd.push(function () {
+        sas.setup({
+          networkid: 2661,
+          domain: "https://www14.smartadserver.com",
+          async: true,
+        });
+      });
+      sas.cmd.push(function () {
+        sas.call("onecall", {
+          siteId: _siteId,
+          pageId: _pageId,
+          formats: [{ id: 56461 }, { id: 56463 }],
+          target: _target,
+        });
+      });
+    </script>
+    <link href="/res/css/main.css" rel="stylesheet" />
+
+    <link href="/res/css/animate.css" rel="stylesheet" />
+
+    <link href="/res/css/linmxp_airport.css" rel="stylesheet" />
+
+    <link href="/res/css/cookiebar.css" rel="stylesheet" />
+    <script>
+      window.lang = "it";
+      window.messages = { loginError: "Email o password non validi" };
+    </script>
+  </head>
+  <!--  <body class="homepage linate image-on-top">-->
+  <body onload="initKeycloak()">
+    <div id="page">
+      <header class="header" data-url="/it/">
+        <nav id="primary">
+          <!-- <h2 class="offscreen">Corporate Menu</h2> -->
+          <ul
+            id="general"
+            itemscope="itemscope"
+            itemtype="http://www.schema.org/SiteNavigationElement"
+          >
+            <li>
+              <span>Passeggeri</span>
+              <!--Linate --><span
+                class="subbed airports-selector js_Airports_Selector"
+                itemprop="name"
+                data-icon-after=""
+                >Linate
+              </span>
+              <div class="menu_wrap">
+                <span class="t_title" data-icon="data-icon">Linate </span>
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="http://www.milanomalpensa-airport.com/it/"
+                      title="Malpensa"
+                      target="_blank"
+                      >Malpensa</a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="https://www.milanairports.com/it/"
+                      title="Milan Airports"
+                      target="_self"
+                      >Milan Airports</a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a
+                itemprop="url"
+                href="http://www.seamilano.eu/it"
+                title="Corporate"
+                target="_blank"
+                ><span>Corporate</span></a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                itemprop="url"
+                href="http://www.milanoprime.it"
+                title="Aviazione Generale"
+                target="_blank"
+                ><span>Aviazione Generale</span></a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                itemprop="url"
+                href="http://www.milanomalpensacargo.eu/it/"
+                title="Cargo"
+                target="_blank"
+                ><span>Cargo</span></a
+              >
+            </li>
+            <li itemprop="name">
+              <a
+                itemprop="url"
+                href="https://www.clubsea.it/it/"
+                title="Club SEA"
+                target="_blank"
+                ><span>Club SEA</span></a
+              >
+            </li>
+          </ul>
+
+          <!-- init menu utente-->
+          <ul id="user_bar">
+            <li class="search">
+              <span class="icon-search" title="Search"></span>
+              <div class="live-search">
+                <label class="input" for="search">
+                  <input
+                    type="text"
+                    name="search"
+                    autocomplete="off"
+                    placeholder="&nbsp;"
+                  />
+                  <span class="label"> Search </span>
+                  <span class="border"></span>
+                  <span class="btn reset icon-close"></span>
+                </label>
+                <ul class="results"></ul>
+              </div>
+            </li>
+            <li class="alarm disabled">
+              <span class="icon-alarm" title="Notify"></span>
+            </li>
+            <li class="shop">
+              <a
+                href="https://www.viamilanoeshop.eu/"
+                title="Shop"
+                target="_blank"
+                rel="noopener"
+                ><span class="icon-shop"></span
+              ></a>
+            </li>
+            <li class="box_User" >
+
+              <app-root>
+
+              </app-root>
+
+            </li>
+
+            <!-- handicap: it -  linate  -  Assistenze speciali    -->
+            <li class="handicap">
+              <a
+                href="/it/guida-per-il-passeggero/assistenze-speciali"
+                title="Assistenze speciali"
+                target="_self"
+                rel="noopener"
+              >
+                <img class="ico-black" src="/res/img/disabile-black.png" /><img
+                  class="ico-white"
+                  src="/res/img/disabile-white.png"
+                />
+              </a>
+            </li>
+            <li class="secondary active">
+              <span class="icon-list" title="Main menu"></span>
+            </li>
+            <li class="language-selector js_Language_Selector">
+              <a href="/en" title="Go to English" id=""><span>EN</span></a
+              ><a href="/it" title="Via a Italiano" class="active"
+                ><span>IT</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+        <div id="logo">
+          <a href="/it/" title="Home Page">
+            <svg>
+              <use xlink:href="#logo_linate" class="fillColor"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- init menu secondario-->
+        <nav class="js_Secondary_Menu" id="secondary">
+          <div class="box_Logo">
+            <a href="/it/" title="Home Page">
+              <svg>
+                <use
+                  xlink:href="#logo_linate"
+                  class="fillColor"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <ul
+            itemscope="itemscope"
+            itemtype="http://www.schema.org/SiteNavigationElement"
+          >
+            <li itemprop="name">
+              <a itemprop="url" title="Voli" class="subbed"
+                ><span>Voli</span></a
+              >
+              <div class="menu_wrap">
+                <span class="t_title mobile" data-icon="data-icon" title="Voli"
+                  >Voli</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/voli/voli" title="Info Voli"
+                      ><span>Info Voli</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/voli/partenze" title="Partenze"
+                      ><span>Partenze</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/voli/arrivi" title="Arrivi"
+                      ><span>Arrivi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/voli/destinazioni"
+                      title="Destinazioni"
+                      ><span>Destinazioni</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/voli/compagnie-aeree"
+                      title="Compagnie aeree"
+                      ><span>Compagnie aeree</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/voli/flight-tracking"
+                      title="Tracking Voli"
+                      ><span>Tracking Voli</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/voli/face-boarding"
+                      title="Face Boarding"
+                      ><span>Face Boarding</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/voli/viamilano"
+                      title="Cerca e prenota il tuo volo con Kiwi.com"
+                      ><span>Cerca e prenota il tuo volo con Kiwi.com</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Da / Per" class="subbed"
+                ><span>Da / Per</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Da / Per"
+                  >Da / Per</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/da-per/arrivare"
+                      title="Arrivare a Linate"
+                      ><span>Arrivare a Linate</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/da-per/in-auto" title="In Auto"
+                      ><span>In Auto</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/da-per/in-taxi" title="in Taxi"
+                      ><span>in Taxi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/da-per/in-bus" title="In Bus"
+                      ><span>In Bus</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/da-per/in-treno"
+                      title="In Treno"
+                      ><span>In Treno</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/da-per/car-sharing"
+                      title="Car Sharing"
+                      ><span>Car Sharing</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/da-per/noleggio-auto"
+                      title="Noleggio Auto"
+                      ><span>Noleggio Auto</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/da-per/noleggio-auto-con-conducente"
+                      title="Noleggio Auto con Conducente"
+                      ><span>Noleggio Auto con Conducente</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Parcheggi" class="subbed"
+                ><span>Parcheggi</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Parcheggi"
+                  >Parcheggi</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/parcheggi"
+                      title="Info parcheggi"
+                      ><span>Info parcheggi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/tariffe-promozioni"
+                      title="Tariffe e promozioni"
+                      ><span>Tariffe e promozioni</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/park-services"
+                      title="Vantaggi ViaMilano Parking"
+                      ><span>Vantaggi ViaMilano Parking</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/servizi-telepass"
+                      title="Servizi e Telepass"
+                      ><span>Servizi e Telepass</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/sosta-breve"
+                      title="Parcheggi Sosta Breve"
+                      ><span>Parcheggi Sosta Breve</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/parcheggi/parcheggi-disabili"
+                      title="Parcheggi per persone con disabilità"
+                      ><span>Parcheggi per persone con disabilità</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Shopping &amp; Food" class="subbed"
+                ><span>Shopping &amp; Food</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Shopping &amp; Food"
+                  >Shopping &amp; Food</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/negozi-ristoranti"
+                      title="Negozi e ristoranti a Linate"
+                      ><span>Negozi e ristoranti a Linate</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/negozi"
+                      title="Negozi"
+                      ><span>Negozi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/bar-ristoranti"
+                      title="Bar e Ristoranti"
+                      ><span>Bar e Ristoranti</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/servizio-shop-collect"
+                      title="Servizio Shop &amp; Collect"
+                      ><span>Servizio Shop &amp; Collect</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/rimborso-iva"
+                      title="Rimborso IVA"
+                      ><span>Rimborso IVA</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/negozi-ristoranti/fidelity-card"
+                      title="Vantaggi ViaMilano Program"
+                      ><span>Vantaggi ViaMilano Program</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Servizi" class="subbed"
+                ><span>Servizi</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Servizi"
+                  >Servizi</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/strutture-servizi"
+                      title="Strutture e Servizi"
+                      ><span>Strutture e Servizi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/fast-track"
+                      title="Fast Track"
+                      ><span>Fast Track</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/club-sea"
+                      title="Club SEA"
+                      ><span>Club SEA</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/vip-lounge"
+                      title="VIP Lounge"
+                      ><span>VIP Lounge</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/vip-service"
+                      title="Vip Service"
+                      ><span>Vip Service</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/linate-center"
+                      title="Linate Center"
+                      ><span>Linate Center</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/wifi"
+                      title="WiFi"
+                      ><span>WiFi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/banche-cambio"
+                      title="Banche, cambio e altri servizi"
+                      ><span>Banche, cambio e altri servizi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/aeroporto-servizi/servizi-digitali"
+                      title="Servizi Digitali"
+                      ><span>Servizi Digitali</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Assistenza" class="subbed"
+                ><span>Assistenza</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Assistenza"
+                  >Assistenza</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/contatti"
+                      title="Contatti"
+                      ><span>Contatti</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/oggetti-smarriti"
+                      title="Oggetti Smarriti"
+                      ><span>Oggetti Smarriti</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/bagagli-smarriti"
+                      title="Bagagli Smarriti"
+                      ><span>Bagagli Smarriti</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/domande-frequenti"
+                      title="Domande Frequenti"
+                      ><span>Domande Frequenti</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/scrivici"
+                      title="Scrivici"
+                      ><span>Scrivici</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/assistenza-clienti/contatti-utili"
+                      title="Numeri utili"
+                      ><span>Numeri utili</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="Info Utili" class="subbed"
+                ><span>Info Utili</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="Info Utili"
+                  >Info Utili</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/guida-al-passeggero"
+                      title="Guida al passeggero"
+                      ><span>Guida al passeggero</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/news"
+                      title="News"
+                      ><span>News</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/mappa-aeroporto"
+                      title="Mappa di Linate"
+                      ><span>Mappa di Linate</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/documenti-viaggio"
+                      title="Documenti di viaggio"
+                      ><span>Documenti di viaggio</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/norme-bagagli"
+                      title="Norme sui bagagli"
+                      ><span>Norme sui bagagli</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/check-in-controlli-sicurezza"
+                      title="Check-in e Controlli di sicurezza"
+                      ><span>Check-in e Controlli di sicurezza</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/famiglie-bambini"
+                      title="Famiglie con bambini"
+                      ><span>Famiglie con bambini</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/assistenze-speciali"
+                      title="Assistenze speciali"
+                      ><span>Assistenze speciali</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/trasporto-animali"
+                      title="Trasporto di animali"
+                      ><span>Trasporto di animali</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/sanita-aerea"
+                      title="Sanità aerea"
+                      ><span>Sanità aerea</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/carta-dei-servizi"
+                      title="Carta dei servizi"
+                      ><span>Carta dei servizi</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/guida-per-il-passeggero/norme-doganali"
+                      title="Norme Doganali"
+                      ><span>Norme Doganali</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+            <li itemprop="name" class="on">
+              <a itemprop="url" title="" href="/it/"><span></span></a>
+            </li>
+            <li itemprop="name">
+              <a itemprop="url" title="COVID-19" class="subbed"
+                ><span>COVID-19</span></a
+              >
+              <div class="menu_wrap">
+                <span
+                  class="t_title mobile"
+                  data-icon="data-icon"
+                  title="COVID-19"
+                  >COVID-19</span
+                >
+                <ol>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/covid-faq/info-covid"
+                      title="Info COVID"
+                      ><span>Info COVID</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a itemprop="url" href="/it/covid-faq/faq" title="FAQ"
+                      ><span>FAQ</span></a
+                    >
+                  </li>
+                  <li itemprop="name">
+                    <a
+                      itemprop="url"
+                      href="/it/covid-faq/tamponi"
+                      title="Prenotazione tamponi"
+                      ><span>Prenotazione tamponi</span></a
+                    >
+                  </li>
+                </ol>
+              </div>
+            </li>
+          </ul>
+          <a class="round" href="#" title="Search"
+            ><span class="icon-search"></span
+          ></a>
+        </nav>
+
+        <div id="m_menu">
+          <a
+            class="header-apple-chat-button"
+            href="https://bcrw.apple.com/urn:biz:e039ec15-5521-4777-b51a-baa5b19f2851"
+            target="_blank"
+            rel="noopener"
+            title="Messenger"
+            ><svg
+              style="filter: url(#dropshadow)"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 45 45"
+              xml:space="preserve"
+            >
+              <path
+                class="fill-apple-header-chat-button"
+                d="M22.5,0C10.1,0,0,10.1,0,22.5S10.1,45,22.5,45S45,34.9,45,22.5S34.9,0,22.5,0z M22.5,30.8c-1,0-2.1-0.1-3-0.3 c-0.5,0.5-2.4,2-6.1,1.7c1.1-0.7,2.8-1.8,2.5-3c0,0,0-0.1-0.1-0.1c0,0-0.1,0-0.1,0c-3-1.7-4.9-4.5-4.9-7.6c0-5.2,5.2-9.3,11.6-9.3 S34,16.3,34,21.4S28.8,30.8,22.5,30.8z"
+              ></path></svg></a
+          ><a class="icon-burger" id="nav_trigger" href="#" title="Menu"></a>
+        </div>
+        <div class="b_breadcrumb">
+          <ol itemscope="itemscope" itemtype="http://schema.org/BreadcrumbList">
+            <li
+              itemprop="itemListElement"
+              itemscope="itemscope"
+              itemtype="http://schema.org/ListItem"
+            >
+              <a itemprop="item" href="/it/"
+                ><span itemprop="title">Home Page</span>
+                <meta itemprop="position" content="1" />
+              </a>
+            </li>
+          </ol>
+        </div>
+      </header>
+      <section id="main">
+        <!--linate-it-->
+
+        <span
+          class="img_full"
+          style="
+            background-image: url(https://www.milanolinate-airport.com/assets/4/AbstractPage/4/C_4_AbstractPage_38_homeIntroImage.jpg);
+          "
+        ></span>
+        <div class="c_sizer">
+          <div class="c_cont">
+            <header class="heading">
+              <h1 class="t_1">Benvenuto a Linate</h1>
+              <h2 class="t_2">Il city airport di Milano</h2>
+              <span class="b_info"
+                ><a
+                  href="https://www.3bmeteo.com"
+                  target="_blank"
+                  class="icon-weather"
+                  data-weather=""
+                  title="molto nuvoloso con deboli pioviggini intermittenti"
+                  ><img
+                    alt="molto nuvoloso con deboli pioviggini intermittenti"
+                    src="https://www.milanolinate-airport.com/res/img/meteo/19-D.svg"
+                  />13 °<span>C</span></a
+                ><span id="clock" class="icon-clock">14:48</span></span
+              ><span id="3b" class="b_info" style="margin-top: 7px"
+                >Previsioni meteo a cura di 3bmeteo.com</span
+              >
+            </header>
+            <div class="b_social">
+              <ul class="links_social">
+                <li>
+                  <a href="https://www.facebook.com/milanairports/"
+                    ><span class="icon-facebook"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://twitter.com/miairports"
+                    ><span class="icon-twitter"></span
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.youtube.com/channel/UClf5TSLJCg69IWXBNpzeiWQ"
+                    ><span class="icon-youtube"></span
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://www.instagram.com/milanairports/"
+                    ><span class="icon-instagram"></span
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="widget">
+        <div class="c_sizer">
+          <div class="c_cont sided">
+            <div class="c_tabs">
+              <span class="b_tabs"
+                ><a class="active" href="#" title="Flights" data-tab="0"
+                  ><span>Voli</span></a
+                ><a href="#" title="Parking" data-tab="1"
+                  ><span>Parcheggi</span
+                  ><span class="promo"><strong></strong></span></a
+              ></span>
+              <div class="b_content active" data-tab="0">
+                <h3 class="t_4">Trova il tuo volo</h3>
+                <p>
+                  Scopri i voli in partenza o in arrivo all'aeroporto di Linate
+                </p>
+                <form class="b_form flights">
+                  <div class="inputs double" data-type="D">
+                    <div class="input radio active">
+                      <input
+                        name="movType"
+                        value="D"
+                        type="radio"
+                        rel="active"
+                        checked="checked"
+                      /><label class="label" for="movType">Partenze</label>
+                    </div>
+                    <div class="input radio">
+                      <input name="movType" value="A" type="radio" /><label
+                        class="label"
+                        for="movType"
+                        >Arrivi</label
+                      >
+                    </div>
+                  </div>
+                  <div class="c_pill search">
+                    <label class="input" for="flight"
+                      ><input
+                        type="text"
+                        name="flight"
+                        id="flight"
+                        placeholder=" "
+                        autocomplete="off" /><span class="label"
+                        >Volo/Destinazione</span
+                      ><span class="border"></span></label
+                    ><button type="button"><span>Vai</span></button>
+                  </div>
+                </form>
+              </div>
+              <div class="b_content" data-tab="1">
+                <h3 class="t_4">Acquista il tuo parcheggio</h3>
+                <p>
+                  Verifica la disponibilità di parcheggi per la data del tuo
+                  viaggio e prenota online un parcheggio in aeroporto con
+                  accesso rapido in aerostazione.
+                </p>
+                <span class="t_line"
+                  ><strong
+                    >Approfitta delle speciali tariffe online acquistabili fino
+                    a 2 ore e mezza prima dell'ingresso</strong
+                  ></span
+                >
+                <form
+                  class="b_form one_row search-form"
+                  autocomplete="off"
+                  onsubmit="return checkFormParking(this)"
+                  action="https://www.milanairports-shop.com/it/search/parking"
+                >
+                  <div class="inputs double">
+                    <input
+                      class="input caret calendarDate"
+                      required="required"
+                      type="text"
+                      name="checkInDate"
+                      placeholder="Entrata"
+                      readonly="true"
+                    /><select
+                      class="input caret calendarTime"
+                      required="required"
+                      type="text"
+                      name="checkInTime"
+                      placeholder="Ore"
+                    >
+                      <option value="-" selected="selected">Ore</option>
+                      <option value="00:00">00:00</option>
+                      <option value="00:30">00:30</option>
+                      <option value="01:00">01:00</option>
+                      <option value="01:30">01:30</option>
+                      <option value="02:00">02:00</option>
+                      <option value="02:30">02:30</option>
+                      <option value="03:00">03:00</option>
+                      <option value="03:30">03:30</option>
+                      <option value="04:00">04:00</option>
+                      <option value="04:30">04:30</option>
+                      <option value="05:00">05:00</option>
+                      <option value="05:30">05:30</option>
+                      <option value="06:00">06:00</option>
+                      <option value="06:30">06:30</option>
+                      <option value="07:00">07:00</option>
+                      <option value="07:30">07:30</option>
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="09:30">09:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:30</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:30</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:30</option>
+                    </select>
+                  </div>
+                  <div class="inputs double">
+                    <input
+                      class="input caret calendarDate"
+                      required="required"
+                      type="text"
+                      name="checkOutDate"
+                      placeholder="Uscita"
+                      readonly="true"
+                    /><select
+                      class="input caret calendarTime"
+                      required="required"
+                      type="text"
+                      name="checkOutTime"
+                      placeholder="Ore"
+                    >
+                      <option value="-" selected="selected">Ore</option>
+                      <option value="00:00">00:00</option>
+                      <option value="00:30">00:30</option>
+                      <option value="01:00">01:00</option>
+                      <option value="01:30">01:30</option>
+                      <option value="02:00">02:00</option>
+                      <option value="02:30">02:30</option>
+                      <option value="03:00">03:00</option>
+                      <option value="03:30">03:30</option>
+                      <option value="04:00">04:00</option>
+                      <option value="04:30">04:30</option>
+                      <option value="05:00">05:00</option>
+                      <option value="05:30">05:30</option>
+                      <option value="06:00">06:00</option>
+                      <option value="06:30">06:30</option>
+                      <option value="07:00">07:00</option>
+                      <option value="07:30">07:30</option>
+                      <option value="08:00">08:00</option>
+                      <option value="08:30">08:30</option>
+                      <option value="09:00">09:00</option>
+                      <option value="09:30">09:30</option>
+                      <option value="10:00">10:00</option>
+                      <option value="10:30">10:30</option>
+                      <option value="11:00">11:00</option>
+                      <option value="11:30">11:30</option>
+                      <option value="12:00">12:00</option>
+                      <option value="12:30">12:30</option>
+                      <option value="13:00">13:00</option>
+                      <option value="13:30">13:30</option>
+                      <option value="14:00">14:00</option>
+                      <option value="14:30">14:30</option>
+                      <option value="15:00">15:00</option>
+                      <option value="15:30">15:30</option>
+                      <option value="16:00">16:00</option>
+                      <option value="16:30">16:30</option>
+                      <option value="17:00">17:00</option>
+                      <option value="17:30">17:30</option>
+                      <option value="18:00">18:00</option>
+                      <option value="18:30">18:30</option>
+                      <option value="19:00">19:00</option>
+                      <option value="19:30">19:30</option>
+                      <option value="20:00">20:00</option>
+                      <option value="20:30">20:30</option>
+                      <option value="21:00">21:00</option>
+                      <option value="21:30">21:30</option>
+                      <option value="22:00">22:00</option>
+                      <option value="22:30">22:30</option>
+                      <option value="23:00">23:00</option>
+                      <option value="23:30">23:30</option>
+                    </select>
+                  </div>
+                  <input type="hidden" name="product" value="PARK" /><input
+                    type="hidden"
+                    name="lang"
+                    value="it"
+                  /><input type="hidden" name="airport" value="LIN" />
+                  <div class="c_pill">
+                    <button class="submit" type="submit" name="submit">
+                      <span>Vai</span>
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <aside class="b_adv">
+            <div class="c_slider">
+              <div
+                class="b_slider slick-initialized slick-slider slick-dotted"
+                data-slide="3"
+                data-autoplay="{'autoplay': true,'autoplaySpeed': 5000}"
+              >
+                <div class="slick-list draggable" style="padding: 0px">
+                  <div
+                    class="slick-track"
+                    style="
+                      opacity: 1;
+                      width: 5500px;
+                      transform: translate3d(-5000px, 0px, 0px);
+                    "
+                  >
+                    <div
+                      class="slick-slide"
+                      data-slick-index="0"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/guida-per-il-passeggero/news/asta-oggetti-rinvenuti"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/715/C_4_AbstractPage_38_30_bannerImg.png"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="1"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            rel="noopener"
+                            href="https://www.flyingangelsfoundation.org/salvali/"
+                            target="_blank"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/285/C_4_AbstractPage_38_29_bannerImg.png"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="2"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/guida-per-il-passeggero/news/smart-security"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/37/C_4_AbstractPage_38_27_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="3"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/guida-per-il-passeggero/news/smart-security"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/228/C_4_AbstractPage_38_28_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="4"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            rel="noopener"
+                            href="https://www.milanairports-shop.com/it/promozioni/promozione-weekend?utm_source=milanolinate-airport.com&amp;utm_medium=referral&amp;utm_campaign=BannerHP"
+                            target="_blank"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/450/C_4_AbstractPage_38_26_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="5"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            rel="noopener"
+                            href="https://seamilano.eu/it/the-sky-is-green"
+                            target="_blank"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/168/C_4_AbstractPage_38_24_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="6"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/guida-per-il-passeggero/news/smart-security"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/490/C_4_AbstractPage_38_22_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="7"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/aeroporto-servizi/wifi"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/319/C_4_AbstractPage_38_23_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="8"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/guida-per-il-passeggero/news/linate-restyling"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/818/C_4_AbstractPage_38_15_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide"
+                      data-slick-index="9"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            rel="noopener"
+                            href="https://www.milanairports-shop.com/it/promozioni/polizza-assicurativa?utm_source=milanolinate-airport.com&amp;utm_medium=referral&amp;utm_campaign=HPBanner"
+                            target="_blank"
+                            ><img
+                              alt="Banner Promo"
+                              src="/assets/4/AbstractPage/122/C_4_AbstractPage_38_11_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="slick-slide slick-current slick-center"
+                      data-slick-index="10"
+                      aria-hidden="true"
+                      style="width: 500px"
+                    >
+                      <div>
+                        <div
+                          class="slide"
+                          style="width: 100%; display: inline-flex"
+                        >
+                          <a
+                            title="Banner Promo"
+                            href="https://www.milanolinate-airport.com/it/voli/face-boarding"
+                            target="_self"
+                            ><img
+                              alt="Banner Promo"
+                              src="https://www.milanolinate-airport.com/assets/4/AbstractPage/365/C_4_AbstractPage_38_10_bannerImg.jpg"
+                          /></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="c_paging" data-nav="dot">
+                <div class="nav">
+                  <a class="active">1</a><a>2</a><a>3</a><a>4</a><a>5</a><a>6</a
+                  ><a>7</a><a>8</a><a>9</a><a>10</a><a>11</a>
+                  <ul class="slick-dots" style="">
+                    <li class=""><button type="button">1</button></li>
+                    <li class=""><button type="button">2</button></li>
+                    <li class=""><button type="button">3</button></li>
+                    <li class=""><button type="button">4</button></li>
+                    <li class=""><button type="button">5</button></li>
+                    <li class=""><button type="button">6</button></li>
+                    <li class=""><button type="button">7</button></li>
+                    <li class=""><button type="button">8</button></li>
+                    <li class=""><button type="button">9</button></li>
+                    <li class=""><button type="button">10</button></li>
+                    <li class="slick-active">
+                      <button type="button">11</button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>

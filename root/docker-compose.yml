@@ -1,0 +1,68 @@
+version: '3'
+
+volumes:
+  mysql_data:
+      driver: local
+
+services:
+
+  mysql:
+      image: mysql:8
+      volumes:
+        - mysql_data:/var/lib/mysql
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: keycloak
+        MYSQL_USER: keycloak
+        MYSQL_PASSWORD: password 
+      networks:
+        - backend  
+   
+  keycloak:
+      image: quay.io/keycloak/keycloak:20.0.2
+      hostname: keycloak
+      environment:
+        DB_VENDOR: MYSQL
+        DB_ADDR: mysql
+        DB_DATABASE: keycloak
+        DB_USER: keycloak
+        DB_PASSWORD: password
+        KEYCLOAK_ADMIN: admin
+        KEYCLOAK_ADMIN_PASSWORD: admin
+      ports:
+        - 8080:8080
+      depends_on:
+        - mysql
+      networks:
+        - backend
+      command:
+        - start-dev
+  springboot:
+      build: ./../kc-spring-boot
+      volumes:
+        - /data/springboot-app  
+      ports: 
+        - 8050:8050
+      depends_on:
+        - keycloak  
+      networks:
+        - backend  
+  angular-crm:
+      build: ./../kc-crm
+      ports:
+        - 5000:5000
+      volumes:
+        - /app/kc-crm
+      networks:
+          - backend      
+  angular-sea:
+      build: ./../kc-sea
+      ports:
+        - 4200:4200
+      volumes:
+        - /app/kc-sea
+      networks:
+          - backend
+networks:
+   backend:  
+      driver: bridge              

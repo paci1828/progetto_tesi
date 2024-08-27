@@ -1,0 +1,65 @@
+<div>
+  <li class="box_User {{popUpActive}} " (click)="tooglePopUp()"><span class="icon-user subbed" title="User Menu"></span>
+
+    <div class="b_cont">
+      <div class="b_user" id="not-logged">
+        <div class="b_box">
+          <form class="b_form" >
+            <div class="inputs">
+
+                  <input type="button" *ngIf="!isLoggedIn" id="login" type="button" (click)="login()" value="Login">
+              <input type="button"   *ngIf="!isLoggedIn" id="registration" (click)="registration()" value="Registration">
+              <div *ngIf="isLoggedIn">
+                <h1> Welcome  user  </h1>
+                <ng-container *ngIf="userProfile">
+                <table>
+                  <div>
+                    <tr *ngIf="userProfile.username">
+                      <th scope="row">Username</th>
+                      <td>{{ userProfile.username }}</td>
+                    </tr>
+                  </div>
+
+                  <div>
+
+                    <td>
+                    <tr *ngIf="userProfile.firstName">
+                      <th scope="row">First name</th>
+                      <td>{{userProfile.firstName}}</td>
+                    </tr>
+                    </td>
+                  </div>
+                  <div>
+                    <td>
+                    <tr *ngIf="userProfile.lastName">
+                      <th scope="row">Last Name</th>
+                      <td>{{ userProfile.lastName }}</td>
+                    </tr>
+                    </td>
+                  </div>
+                  <div>
+                    <td>
+                    <tr *ngIf="userProfile.email">
+                      <th scope="row">Email</th>
+                      <td>{{ userProfile.email }}</td>
+                    </tr>
+                    </td>
+                  </div>
+                </table>
+                  </ng-container>
+              </div>
+              <div>
+                <td>
+                <input type="button" *ngIf="isLoggedIn" id="logout" type="button" (click)="logout()" value="Logout">
+                </td>
+              </div>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </li>
+</div>
+
+
